@@ -1,0 +1,79 @@
+/* *COMM0N CSS STARTS */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav{
+  text-align: center;
+  background-color: rgba(17, 113, 132, 0.752);
+  padding: 12px 0;
+}
+
+
+
+ul{
+  list-style: none;
+}
+nav ul li{
+  display: inline-block;
+
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  padding: 13px 20px;
+  display: block;
+  font-size: 22px;
+  font-family: italic;
+  position: relative;
+  z-index: 1;
+ 
+  
+   
+}
+nav ul li a::before{
+  content:'';
+  width: 0%;
+  height:4px;
+  top:0;
+  left:0;
+  position: absolute;
+  z-index: -1;
+  transition: 0.35s;
+}
+nav ul li:hover a::before{
+  background-color:  rgba(95, 31, 130, 0.397);
+  width: 100%;
+  
+}
+nav ul li a::after{
+  content:'';
+  width: 0%;
+  height:4px;
+  bottom:0;
+  right:0;
+  position: absolute;
+  z-index: -1;
+  transition: 0.35s;
+}
+nav ul li:hover a::after{
+  background-color: rgba(95, 31, 130, 0.397);
+  width: 100%;
+  width: 100%;
+  
+}
+
+
+
+
+
+
+
+
+/* *NAV BAR ENDS */
+
+/* *COMM0N CSS ENDS */
